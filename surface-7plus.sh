@@ -29,7 +29,7 @@ ninja -C build install
 
 # create a service file
 if [ ! -f /lib/systemd/system/iptsd.service ]; then
-        sudo cp $REPODIR/ip[tsd.service /lib/systemd/system/iptsd.service
+        sudo cp $REPODIR/iptsd.service /lib/systemd/system/iptsd.service
 fi
 
 # enable service
