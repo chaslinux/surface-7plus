@@ -6,6 +6,9 @@
 # this script updates the Ubuntu system and installs the touch drivers for the
 # Microsoft Surface Pro 7+
 
+# This surface directory should be the REPODIR
+REPODIR=$(pwd)
+
 # install updates
 sudo apt update && sudo apt upgrade -y
 
@@ -21,7 +24,6 @@ mkdir ~/Code
 cd ~/Code
 git clone https://github.com/linux-surface/iptsd
 cd iptsd
-REPODIR=$(pwd)
 
 # build iptsd
 meson build
